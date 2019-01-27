@@ -1,5 +1,5 @@
 # Surveying post-lenticular landscapes
-A workshop by [**APT OPT OUT**](https://www.instagram.com/apt.opt.out/).
+A workshop by [Apt Opt Out](https://www.instagram.com/apt.opt.out/).
 
 Here's a list of resources for developing projects with the Kinect. If people miss certain information or have more resources let me know. With this document I hope everyone can find a place to start for making projects with the Kinect.
 

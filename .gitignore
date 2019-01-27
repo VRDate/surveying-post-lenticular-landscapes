@@ -1,0 +1,33 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# local
+/local
+
+# misc
+._*
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.AppleDouble
+.LSOverride
+Icon
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.Rproj.user

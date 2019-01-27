@@ -7,7 +7,7 @@ In the folder [processing](https://github.com/aptoptout/surveying-post-lenticula
 
 From Monday, January 28th 2019, there are 2 available MS Kinect's in Hacklab at the Royal Academy of Art. [Here](https://www.gooxbox360.nl/xbox-360-accessoires-kopen/microsoft-kinect/) is a good place to buy secondhand Kinect's where they are first tested before being sold.
 
-##### Table of Contents
+### Table of Contents
 [**Kinect + Processing**](#kinectprocessing)  
 [Libraries](#processinglibraries)  
 [Beginners Resources](#processingresources)  

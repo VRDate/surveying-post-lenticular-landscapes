@@ -8,22 +8,22 @@ In the folder [processing](https://github.com/aptoptout/surveying-post-lenticula
 From Monday, January 28th 2019, there are 2 available MS Kinect's in Hacklab at the Royal Academy of Art. [Here](https://www.gooxbox360.nl/xbox-360-accessoires-kopen/microsoft-kinect/) is a good place to buy secondhand Kinect's where they are first tested before being sold.
 
 ### Table of Contents
-[**Kinect + Processing**](#kinectprocessing)  
-[Libraries](#processinglibraries)  
-[Beginners Resources](#processingresources)  
-[General example repositories](#processingexamplerepo)  
-[Body/ Limb/ Gesture tracking](#bodylimbgesturetracking)  
-[Depth camera/ 3D scan/ Point cloud/ 3D Mesh](#depthcamerapointcloudmesh)  
-[Books](#processingbooksmagazines)  
-[Channels](#processingchannels)  
-[Documentary Films](#processingdocumentaryfilms)  
-[Artists/ Designers /Educators](#processingartistsdesigners)  
-[**Kinect + Unity**](#kinectunity)  
-[**Depth camera/ 3D scan/ Point cloud/ 3D Mesh**](#kinectdepthcamerapointcloudmesh)  
-[**MeshLab**](#meshlab)  
-[**Skanect**](#skanect)  
-[**List of depth camera's**](#depthcameras)  
-[**Projects/ Inspiration**](#projectsinspiration)  
+0. [**Kinect + Processing**](#kinectprocessing)  
+...[Libraries](#processinglibraries)  
+...[Beginners Resources](#processingresources)  
+...[General example repositories](#processingexamplerepo)  
+...[Body/ Limb/ Gesture tracking](#bodylimbgesturetracking)  
+...[Depth camera/ 3D scan/ Point cloud/ 3D Mesh](#depthcamerapointcloudmesh)  
+...[Books](#processingbooksmagazines)  
+...[Channels](#processingchannels)  
+...[Documentary Films](#processingdocumentaryfilms)  
+...[Artists/ Designers /Educators](#processingartistsdesigners)  
+0. [**Kinect + Unity**](#kinectunity)  
+0. [**Depth camera/ 3D scan/ Point cloud/ 3D Mesh**](#kinectdepthcamerapointcloudmesh)  
+0. [**MeshLab**](#meshlab)  
+0. [**Skanect**](#skanect)  
+0. [**List of depth camera's**](#depthcameras)  
+0. [**Projects/ Inspiration**](#projectsinspiration)  
 
 
 <a name="kinectprocessing"/>

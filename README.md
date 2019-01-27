@@ -3,12 +3,12 @@ A workshop by Apt Opt Out.
 
 Here's a list of resources for developing projects with the Kinect. If people miss certain information or have more resources let me know. With this document I hope everyone can find a place to start for making projects with the Kinect.
 
-In the folder [processing](https://github.com/aptoptout/surveying-post-lenticular-landscapes/processing) you can find several examples I have prepared and were developed during the workshop.
+In the folder [processing](https://github.com/aptoptout/surveying-post-lenticular-landscapes/tree/master/processing) you can find several examples I have prepared and were developed during the workshop.
 
 From Monday, January 28th 2019, there are 2 available MS Kinect's in Hacklab at the Royal Academy of Art. [Here](https://www.gooxbox360.nl/xbox-360-accessoires-kopen/microsoft-kinect/) is a good place to buy secondhand Kinect's where they are first tested before being sold.
 
 ##### Table of Contents
-[Kinect + Processing](#kinectprocessing)  
+**[Kinect + Processing](#kinectprocessing)**  
 [Libraries](#processinglibraries)  
 [Beginners Resources](#processingresources)  
 [General example repositories](#processingexamplerepo)  
@@ -18,12 +18,12 @@ From Monday, January 28th 2019, there are 2 available MS Kinect's in Hacklab at 
 [Channels](#processingchannels)  
 [Documentary Films](#processingdocumentaryfilms)  
 [Artists/ Designers /Educators](#processingartistsdesigners)  
-[Kinect + Unity](#kinectunity)  
-[Depth camera/ 3D scan/ Point cloud/ 3D Mesh](#kinectdepthcamerapointcloudmesh)  
-[MeshLab](#meshlab)  
-[Skanect](#skanect)  
-[List of depth camera's](#depthcameras)  
-[Projects/ Inspiration](#projectsinspiration)  
+**[Kinect + Unity](#kinectunity)**  
+**[Depth camera/ 3D scan/ Point cloud/ 3D Mesh](#kinectdepthcamerapointcloudmesh)**  
+**[MeshLab](#meshlab)**  
+**[Skanect](#skanect)**  
+**[List of depth camera's](#depthcameras)**  
+**[Projects/ Inspiration](#projectsinspiration)**  
 
 
 <a name="kinectprocessing"/>

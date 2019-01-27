@@ -19,7 +19,7 @@ From Monday, January 28th 2019, there are 2 available MS Kinect's in Hacklab at 
 ...[Documentary Films](#processingdocumentaryfilms)  
 ...[Artists/ Designers /Educators](#processingartistsdesigners)  
 0. [**Kinect + Unity**](#kinectunity)  
-0. [**Depth camera/ 3D scan/ Point cloud/ 3D Mesh**](#kinectdepthcamerapointcloudmesh)  
+...[Depth camera/ 3D scan/ Point cloud/ 3D Mesh](#kinectdepthcamerapointcloudmesh)  
 0. [**MeshLab**](#meshlab)  
 0. [**Skanect**](#skanect)  
 0. [**List of depth camera's**](#depthcameras)  

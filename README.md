@@ -163,7 +163,7 @@ System Integrity Protection (SIP) is a new default security measure introduced b
 ...type in your password and let it install the _Primesense_ sensor
 
 #### Step 6: Install NiTE
-1. Last thing to install. Go [here](http://cvrlcode.ics.forth.gr/web_share/OpenNI/NITE_SDK/NITE_1.x/) and download _NiTE-Bin-MacOSX-v1.5.2.21.tar.zip_
+1. Last thing to install. [Go here and download](http://cvrlcode.ics.forth.gr/web_share/OpenNI/NITE_SDK/NITE_1.x/) _NiTE-Bin-MacOSX-v1.5.2.21.tar.zip_
 2. Add this file to your _Kinect_ folder and uncompress it
 3. Go into _Terminal_ and navigate to the _NiTE_ folder
 4. Install NiTE by typing in the following commands  
@@ -180,14 +180,14 @@ Now try and run some examples!
 4. Run the first Demo by typing in the following command  
 ...`./Sample-PointViewer`  
 
-If everything is setup correctly then a new window should pop up and display a tracking demo!  
+If everything is setup correctly then a new window should pop up and display a tracking demo! 
 
-Lastly let's turn on the SIP again:  
+#### Step 8: Turn on the SIP again:  
 1. Restart your Mac in _Recovery mode_ (Restart your Mac holding down Cmd-R)
 2. Find _Terminal_ in the _Utilities_ menu and type in the following : `csrutil enable`
 3. Restart your mac
 
-#### Step 8: Running Kinect inside Unity
+#### Step 9: Running Kinect inside Unity
 Finally we can get access to the Kinect from inside Unity, we just have to get the right bindings between the sensor and Unity.
 
 1. Download the _Unity_ package [located here](https://github.com/aptoptout/surveying-post-lenticular-landscapes/tree/master/unity).
@@ -196,7 +196,7 @@ Finally we can get access to the Kinect from inside Unity, we just have to get t
 
 I will keep writing my findings on how to use these scripts to get certain things done. Also this should be provide the right foundation to find other examples that make use of the Kinect in Unity and run those projects without (much) problems.
 
-[source 1](https://www.macports.org/install.php)[source 2](https://storage.googleapis.com/goog...ple-openni/OpenNI_NITE_Installer-OSX-0.24.zip)[source 3](https://web.archive.org/web/20170607225336/http://zigfu.com/en/downloads/legacy/)[source 4](http://developkinect.com/resource/package-installer/zigfu-package-installer)[source 5](https://forum.unity.com/threads/kinect-for-osx.104760/)[source 5](http://developkinect.com/resource/mac-os-x/install-openni-nite-and-sensorkinect-mac-os-x)[source 6](https://creativevreality.wordpress.com/2016/01/26/setting-up-the-kinect-on-osx-el-capitan/)
+[source 1](https://www.macports.org/install.php), [source 2](https://storage.googleapis.com/goog...ple-openni/OpenNI_NITE_Installer-OSX-0.24.zip), [source 3](https://web.archive.org/web/20170607225336/http://zigfu.com/en/downloads/legacy/), [source 4](http://developkinect.com/resource/package-installer/zigfu-package-installer), [source 5](https://forum.unity.com/threads/kinect-for-osx.104760/), [source 5](http://developkinect.com/resource/mac-os-x/install-openni-nite-and-sensorkinect-mac-os-x), [source 6](https://creativevreality.wordpress.com/2016/01/26/setting-up-the-kinect-on-osx-el-capitan/)
 
 <a name="kinectdepthcamerapointcloudmesh"/>
 

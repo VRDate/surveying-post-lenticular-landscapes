@@ -19,12 +19,14 @@ From Monday, January 28th 2019, there are 2 available MS Kinect's in Hacklab at 
 ...[Documentary Films](#processingdocumentaryfilms)  
 ...[Artists/ Designers /Educators](#processingartistsdesigners)  
 0. [**Kinect + Unity**](#kinectunity)  
+...[Setting up the Kinect and Unity](#kinectunityinstall)  
 ...[Depth camera/ 3D scan/ Point cloud/ 3D Mesh](#kinectdepthcamerapointcloudmesh)  
 0. [**MeshLab**](#meshlab)  
 0. [**Skanect**](#skanect)  
 0. [**List of depth camera's**](#depthcameras)  
 0. [**Projects/ Inspiration**](#projectsinspiration)  
 
+---
 
 <a name="kinectprocessing"/>
 
@@ -104,19 +106,97 @@ Casey Reas [↗](http://reas.com/)
 Daniel Shiffman [↗](https://shiffman.net/)  
 Elliot Woods [↗](https://www.kimchiandchips.com/works/)  
 
+---
+
 <a name="kinectunity"/>
 
 ## Kinect + Unity
-In this section I'll link to lots of resources for developing projects with the Kinect and Unity. However I'm actually exploring this topic still myself so this will be updated over time.
+In this section I'll explain how to install the correct drivers and middleware to setup the _Kinect_ (v1) with _Unity_ (on Mac OSX). If you have resources that would fit this section please let me know.
 
-If you have resources that would fit this section please let me know.
+<a name="kinectunityinstall">
 
-1. Install MacPorts [↗](https://www.macports.org/install.php)
-2. Install OpenNI via this installer [↗](https://storage.googleapis.com/goog...ple-openni/OpenNI_NITE_Installer-OSX-0.24.zip)
-3. Download Unity-OpenNI Bindings [↗](https://web.archive.org/web/20170607225336/http://zigfu.com/en/downloads/legacy/)
+### Setting up the Kinect and Unity
+#### Step 1: Disable System Integrity Proctection
 
-[ZigFu Package Installer](http://developkinect.com/resource/package-installer/zigfu-package-installer)  
-[Source of installation](https://forum.unity.com/threads/kinect-for-osx.104760/)  
+System Integrity Protection (SIP) is a new default security measure introduced by Apple in OS X 10.11 onward. This rootless feature prevents Mac OS X compromise by malicious code, therefore locking down specific system level locations in the file system. This prevents the user from making changes to the system via Sudo commands. Therefore in order for us to proceed, we need to turn it off.
+
+1. Restart your Mac in Recovery mode (Restart your Mac holding down Cmd-R)
+2. Find _Terminal_ in the _Utilities_ menu and type in the following : `csrutil disable`
+3. Restart your mac
+
+**Now we have full access to install the right software.**
+
+#### Step 2: Download and install MacPorts & Brew
+
+1. Visit http://www.macports.org/install.php, download and install MacPorts (follow instruction on their website).
+2. Visit https://brew.sh/, download and install Brew (follow instruction on their website).
+
+#### Step 3: Install Dependencies
+
+1. Open _Terminal_
+2. Type: `sudo port install libtool`
+3. Restart your mac
+4. Open _Terminal_ again
+5. Type: `brew install libusb`
+6. Restart your mac again
+
+#### Step 4: Install OpenNI
+
+1. Go to a folder where you'd like to store all the Kinect software (e.g. 'Documents')
+2. Create a new folder called 'Kinect'
+3. Download this version of [OpenNI](https://mega.nz/#!yJwg1DJS!uJiLY4180QGXjKp7sze8S3eDVU71NHiMrXRq0TA7QpU)
+4. Move the Zip file to your Kinect folder and double-click to uncompress and reveal the SDK folder.
+5. Open Terminal and navigate to the OpenNI SDK folder
+6. Once in the folder, 
+...first type: `chmod +x install.sh`
+...then type: `sudo ./install.sh`
+...type in your password and let it install
+7. After succesfull installation type this in _Terminal_: `sudo ln -s /usr/local/bin/niReg /usr/bin/niReg`
+
+#### Step 5: Install SensorKinect
+1. Go here and download this repository: https://github.com/avin2/SensorKinect
+2. Move the downloaded Zip file to the _Kinect_ folder you created earlier and uncompress the Zip inside that folder
+3. Navigate to the _SensorKinect093-Bin-MacOSX-v5.1.2.1.tar_ file inside the _Bin_ folder and uncompress it
+4. Open Terminal and navigate to the same folder
+...first type: `chmod +x install.sh`
+...then type: `sudo ./install.sh`
+...type in your password and let it install the _Primesense_ sensor
+
+#### Step 6: Install NiTE
+1. Last thing to install. Go [here](http://cvrlcode.ics.forth.gr/web_share/OpenNI/NITE_SDK/NITE_1.x/) and download _NiTE-Bin-MacOSX-v1.5.2.21.tar.zip_
+2. Add this file to your _Kinect_ folder and uncompress it
+3. Go into _Terminal_ and navigate to the _NiTE_ folder
+4. Install NiTE by typing in the following commands
+...first type: `chmod +x install.sh`
+...then type: `sudo ./install.sh`
+...type in your password and let it install the _Primesense_ sensor
+
+#### Step 7: Checking if everything works
+Now try and run some examples!
+
+1. Plug in the Kinect
+2. Copy the sample XML files from NiTE/Data over to the Data folder in SensorKinect
+3. Open Terminal and navigate to NiTE/Samples/Bin/x64-Release
+4. Run the first Demo by typing in the following command
+...`./Sample-PointViewer`
+
+If everything is setup correctly then a new window should pop up and display a tracking demo!
+
+Lastly let's turn on the SIP again:
+1. Restart your Mac in _Recovery mode_ (Restart your Mac holding down Cmd-R)
+2. Find _Terminal_ in the _Utilities_ menu and type in the following : `csrutil enable`
+3. Restart your mac
+
+#### Step 8: Running Kinect inside Unity
+Finally we can get access to the Kinect from inside Unity, we just have to get the right bindings between the sensor and Unity.
+
+1. Download the _Unity_ package [located here](https://github.com/aptoptout/surveying-post-lenticular-landscapes/tree/master/unity).
+2. Import that _Unity_ package in a new or existing project.
+3. There are some example scenes you can open to see if and how it works.
+
+I will keep writing my findings on how to use these scripts to get certain things done. Also this should be provide the right foundation to find other examples that make use of the Kinect in Unity and run those projects without (much) problems.
+
+[source 1](https://www.macports.org/install.php)[source 2](https://storage.googleapis.com/goog...ple-openni/OpenNI_NITE_Installer-OSX-0.24.zip)[source 3](https://web.archive.org/web/20170607225336/http://zigfu.com/en/downloads/legacy/)[source 4](http://developkinect.com/resource/package-installer/zigfu-package-installer)[source 5](https://forum.unity.com/threads/kinect-for-osx.104760/)[source 5](http://developkinect.com/resource/mac-os-x/install-openni-nite-and-sensorkinect-mac-os-x)[source 6](https://creativevreality.wordpress.com/2016/01/26/setting-up-the-kinect-on-osx-el-capitan/)
 
 <a name="kinectdepthcamerapointcloudmesh"/>
 
@@ -124,15 +204,21 @@ If you have resources that would fit this section please let me know.
 
 Point Cloud Data with Unity [↗](https://blog.sketchfab.com/tutorial-processing-point-cloud-data-unity/)  
 
+---
+
 <a name="meshlab"/>
 
 ## MeshLab
 Turning point cloud into mesh in MeshLab [↗](http://gmv.cast.uark.edu/scanning/point-clouds-to-mesh-in-meshlab/)  
 
+---
+
 <a name="skanect"/>
 
 ## Skanect
 Skanect (turn Kinect in 3D scanner) [↗](https://skanect.occipital.com/)  
+
+---
 
 <a name="depthcameras"/>
 
@@ -146,6 +232,8 @@ VicoVR [↗](https://vicovr.com/)
 Stereolabs ZED [↗](https://www.stereolabs.com/zed/)  
 Xtion PRO [↗](https://www.asus.com/3D-Sensor/Xtion_PRO/)  
 
+---
+
 <a name="projectsinspiration"/>
 
 ## Projects/ Inspiration
@@ -157,7 +245,11 @@ PajamaClub – TNT For Two [↗](https://www.youtube.com/watch?v=fG9y52tWTDw)
 Custom Logic – The Motion Project [↗](https://www.custom-logic.com/work/the_motion_project/)  
 Radiohead – House of Cards [↗](https://www.youtube.com/watch?v=8nTFjVm9sTQ)  
 
-## Kinect vanilla (advanced)
-To fully get the power of the Kinect you can install all drivers and middleware that will allow you to use everything the Kinect contains (including the microphone array for example).
+---
 
-Start with this installation process: http://developkinect.com/resource/mac-os-x/install-openni-nite-and-sensorkinect-mac-os-x
+<a name="kinectvanilla">
+
+## Kinect vanilla
+With Kinect vanilla I mean accessing the sensor without the use of any additional frameworks, software or libraries other than its own drivers, middleware and language wrappers. This way allows you to get more control over the sensor and make use of all the equipment inside such as the microphone array.
+
+To install everything for Kinect vanilla follow the installation process shown in [_Setting up the Kinect and Unity_](#kinectunityinstall) until step 7.

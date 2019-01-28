@@ -147,28 +147,28 @@ System Integrity Protection (SIP) is a new default security measure introduced b
 3. Download this version of [OpenNI](https://mega.nz/#!yJwg1DJS!uJiLY4180QGXjKp7sze8S3eDVU71NHiMrXRq0TA7QpU)
 4. Move the Zip file to your Kinect folder and double-click to uncompress and reveal the SDK folder.
 5. Open Terminal and navigate to the OpenNI SDK folder
-6. Once in the folder, 
-...first type: `chmod +x install.sh`
-...then type: `sudo ./install.sh`
-...type in your password and let it install
+6. Once in the folder,  
+...first type: `chmod +x install.sh`  
+...then type: `sudo ./install.sh`  
+...type in your password and let it install  
 7. After succesfull installation type this in _Terminal_: `sudo ln -s /usr/local/bin/niReg /usr/bin/niReg`
 
 #### Step 5: Install SensorKinect
 1. Go here and download this repository: https://github.com/avin2/SensorKinect
 2. Move the downloaded Zip file to the _Kinect_ folder you created earlier and uncompress the Zip inside that folder
 3. Navigate to the _SensorKinect093-Bin-MacOSX-v5.1.2.1.tar_ file inside the _Bin_ folder and uncompress it
-4. Open Terminal and navigate to the same folder
-...first type: `chmod +x install.sh`
-...then type: `sudo ./install.sh`
+4. Open Terminal and navigate to the same folder  
+...first type: `chmod +x install.sh`  
+...then type: `sudo ./install.sh`  
 ...type in your password and let it install the _Primesense_ sensor
 
 #### Step 6: Install NiTE
 1. Last thing to install. Go [here](http://cvrlcode.ics.forth.gr/web_share/OpenNI/NITE_SDK/NITE_1.x/) and download _NiTE-Bin-MacOSX-v1.5.2.21.tar.zip_
 2. Add this file to your _Kinect_ folder and uncompress it
 3. Go into _Terminal_ and navigate to the _NiTE_ folder
-4. Install NiTE by typing in the following commands
-...first type: `chmod +x install.sh`
-...then type: `sudo ./install.sh`
+4. Install NiTE by typing in the following commands  
+...first type: `chmod +x install.sh`  
+...then type: `sudo ./install.sh`  
 ...type in your password and let it install the _Primesense_ sensor
 
 #### Step 7: Checking if everything works
@@ -177,12 +177,12 @@ Now try and run some examples!
 1. Plug in the Kinect
 2. Copy the sample XML files from NiTE/Data over to the Data folder in SensorKinect
 3. Open Terminal and navigate to NiTE/Samples/Bin/x64-Release
-4. Run the first Demo by typing in the following command
-...`./Sample-PointViewer`
+4. Run the first Demo by typing in the following command  
+...`./Sample-PointViewer`  
 
-If everything is setup correctly then a new window should pop up and display a tracking demo!
+If everything is setup correctly then a new window should pop up and display a tracking demo!  
 
-Lastly let's turn on the SIP again:
+Lastly let's turn on the SIP again:  
 1. Restart your Mac in _Recovery mode_ (Restart your Mac holding down Cmd-R)
 2. Find _Terminal_ in the _Utilities_ menu and type in the following : `csrutil enable`
 3. Restart your mac
